@@ -1,0 +1,94 @@
+:root{
+    --neonpink:hsl(317,100%, 54%);
+    --neonblue:hsl(227,100%,56%);
+    --blackbg:black;
+    --grey:hsl(0,0%,100%,0.3);
+
+}
+html{
+    background-color: var(--blackbg);
+}
+*{
+    box-sizing: border-box;
+}
+.box {
+    width:100%;
+    height: 120px;
+    position: absolute;
+    animation-name: anime;
+    animation-duration: 8s;
+    animation-iteration-count: 1;
+    text-align: center;
+    padding:9px 30px;
+    font-size: 4.5rem;
+    background-color: var(--blackbg);
+     color: var(--neonblue); 
+    border:currentColor 0.125em solid;
+    text-shadow: 0 0 0.125em var(--grey),0 0 0.45em currentColor;
+    box-shadow: inset 0 0 0.5em 0 var(--neonblue) ,0 0 0.5em 0 var(--neonblue);
+}
+@keyframes anime{
+    from {
+        width: 400px;
+    }
+
+    to {
+        width: 1400px;
+    }
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.calculator{
+    max-width: 320px;
+    display: grid;
+    padding-top: 14%;
+
+}
+.calcbuttons{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    border: 0;
+}
+.calculate-numbers{
+    font-family:serif;
+    background: var(--blackbg);
+    color: white;
+    font-size: 2em;
+    border:0;
+    padding: 0.3em;
+    text-align: right;
+    width: 100%;
+    height: 100px;
+    background-color: var(--blackbg);
+    color: var(--neonpink);
+    border:currentColor 0.125em solid;
+    text-shadow: 0 0 0.125em var(--grey),0 0 0.45em currentColor;
+    box-shadow: inset 0 0 0.5em 0 var(--neonpink),0 0 0.5em 0 var(--neonpink);
+}
+.span-2{
+    grid-column: span 2;
+}
+.btn{
+    font-size: 1em;
+    height: 65px;
+    background-color: var(--blackbg);
+    color: var(--neonpink);
+    border:currentColor 0.125em solid;
+    text-shadow: 0 0 0.125em var(--grey),0 0 0.45em currentColor;
+    box-shadow: inset 0 0 0.5em 0 var(--neonpink),0 0 0.5em 0 var(--neonpink);
+}
+.btn:hover {
+    color: var(--blackbg);
+    background: var(--neonpink);
+    text-shadow: none;
+    font-weight: 900;
+}
+.purple{
+    background-color: var(--blackbg);
+    color: var(--neonpink);
+    border:currentColor 0.125em solid;
+    text-shadow: 0 0 0.125em var(--grey),0 0 0.45em currentColor;
+    box-shadow: inset 0 0 0.5em 0 var(--neonpink),0 0 0.5em 0 var(--neonpink);
+}
